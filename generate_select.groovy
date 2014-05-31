@@ -14,10 +14,6 @@
 import org.apache.poi.ss.usermodel.*
 import org.jggug.kobo.gexcelapi.*
 
-def comment(value, space = 2) {
-  return value.empty ? '' : ' ' * space + '-- ' + value
-}
-
 // expand Cell class
 Cell.metaClass.define {
   getEvaluatedValue{
